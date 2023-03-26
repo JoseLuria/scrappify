@@ -6,7 +6,7 @@ import axios from 'axios'
 
 export const statusMsg = ({ status = 'success', msg }: StatusOptions): void => {
   const statusIcons = { success: '🟢', warn: '🟡', error: '🔴' }
-  console.log(`${status}: ${statusIcons[status]} ${msg}`)
+  console.log(`${statusIcons[status]} ${status}: ${msg}`)
 }
 
 export const scrape = async (URL: string): Promise<cheerio.CheerioAPI> => {

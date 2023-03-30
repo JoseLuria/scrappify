@@ -5,7 +5,7 @@ import * as cheerio from 'cheerio'
 import axios from 'axios'
 
 export const statusMsg = ({ status = 'success', msg }: StatusOptions): void => {
-  const statusIcons = { success: '🟢', warn: '🟡', error: '🔴' }
+  const statusIcons = { success: '🟢', pending: '🟡', error: '🔴' }
   console.log(`${statusIcons[status]} ${status}: ${msg}`)
 }
 

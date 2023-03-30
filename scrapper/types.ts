@@ -5,7 +5,7 @@ export interface StatusOptions {
   msg: string
 }
 
-export interface ScrapedSong {
+export interface ScrappedSong {
   number: number
   artist: string
   title: string
